@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <h1 class="text-6xl	font-bold text-cyan-500 text-center	mt-10">Money Moster</h1>
+    <main class="max-w-7xl w-full mx-auto mt-10">
+        <section class="flex gap-9">
+            <section class="w-6/12">
+                <img class="w-full bg-cover" src="images/money-master.png" alt="" srcset="">
+            </section>
+            <section class="bg-slate-100 w-6/12 py-8 ">
+                <div class="">
+                    <h1  class="text-3xl font-bold text-center">Income</h1>
+                <div class="flex items-center gap-10 justify-end mt-5 mr-16">
+                    <p class="text-2xl font-semibold">Income: </p>
+                    <input id="income-source" type="text" placeholder="Type here" class="input input-bordered inline-block w-full max-w-xs"/>
+                </div>
+                <h1 class="text-3xl font-bold text-center mt-5">Expenses</h1>
+                <div class="flex items-center gap-10 justify-end mt-5 mr-16">
+                    <p class="text-2xl font-semibold">Food:</p>
+                    <input id="food-cost" type="text" placeholder="Type here" class="input input-bordered inline-block w-full max-w-xs"/>
+                </div>
+                <div class="flex items-center gap-10 justify-end mt-5 mr-16">
+                    <p class="text-2xl font-semibold">Rent:</p>
+                    <input id="rent-cost" type="text" placeholder="Type here" class="input input-bordered inline-block w-full max-w-xs"/>
+                </div>
+                <div class="flex items-center gap-10 justify-end mt-5 mr-16">
+                    <p class="text-2xl font-semibold">Clothes:</p>
+                    <input id="cloth-cost" type="text" placeholder="Type here" class="input input-bordered inline-block w-full max-w-xs"/>
+                </div>
+                <div class="mt-5 flex justify-center mx-auto">
+                    <button id="btn-calculate" class="btn btn-info px-10">Calculate</button>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-center mt-3">Total Expenses: <span id="total-cost">5500</span></h1>
+                    <h1 class="text-3xl font-bold text-center mt-3">Balance: <span id="balance-expense">4500</span></h1>
+                </div>
+                <div class="flex items-center justify-center gap-4 mt-5">
+                    <p class="text-2xl font-semibold">Save : </p> <input id="saving-input" type="text" placeholder="Type here" class="input input-bordered inline-block  max-w-xs"/> <span class="text-2xl font-semibold">%</span>
+                    <div class="flex justify-center">
+                        <button id="save-btn" class="btn btn-info">Save</button>
+                    </div>
+                </div>
+                 <div>
+                    <h1 class="text-3xl font-bold text-center mt-5">Saving Amount: <span id="saving-amount">5500</span></h1>
+                    <h1 class="text-3xl font-bold text-center mt-5">Remaining Balance: <span id="reamining-balance">4500</span></h1>
+                </div>
+                
+            </div>
+            
+        </section>
+    </section>
+</main>
+<script src="js/calculate.js"></script>
+</body>
+</html>
